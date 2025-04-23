@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies&Coffee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Обычное меню для ПК -->
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="#history">История</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#menu">Меню</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="#order">Заказать</a></li>
+        </ul>
+    </nav>
+
+    <!-- Бургер-меню для мобильных -->
+    <div class="burger-menu">
+        <div class="burger-icon" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#history">История</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#order">Заказать</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Основной контент -->
+    <header>
+        <h1>Welcome to</h1>
+        <h1>Cookies&Coffee</h1>
+        <p>Изучите наше меню</p>
+    </header>
+
+    <main>
+        <section id="history" class="history-section">
+            <h2>История</h2>
+            <p>Основанная в 2025 году, компания Cookies&Coffee создает исключительные кофейные впечатления с страстью и точностью. Наша приверженность качеству и устойчивому развитию лежит в основе всего, что мы делаем.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Ручная работа</h3>
+                    <p>Каждая чашка готовится с особым вниманием к деталям.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Команда экспертов</h3>
+                    <p>Наши бариста проходят строгое обучение и сертификацию.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Элитные зерна</h3>
+                    <p>Используем только отборные зерна с лучших плантаций мира.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <h2>Меню</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/coffee1.png" alt="Эспрессо">
+                    <h3>Эспрессо</h3>
+                    <p class="price">$3.99</p>
+                    <p class="description">Классический крепкий кофе</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/coffee2.png" alt="Капучино">
+                    <h3>Капучино</h3>
+                    <p class="price">$4.49</p>
+                    <p class="description">Эспрессо с молочной пенкой</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/coffee3.png" alt="Латте">
+                    <h3>Латте</h3>
+                    <p class="price">$4.99</p>
+                    <p class="description">Нежный кофе с большим количеством молока</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/cookie1.png" alt="Черничный мафин">
+                    <h3>Черничный мафин</h3>
+                    <p class="price">$2.99</p>
+                    <p class="description">Домашние мафины и свежая черника</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews-section">
+            <h2>Отзывы</h2>
+            <div class="reviews-grid">
+                <div class="review">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Вот это да! Попробовал здесь Эспрессо и потом не спал два дня! Советую!"</p>
+                    <p class="author">- Ценитель кофе нескафе599</p>
+                </div>
+                <div class="review">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>"Ну ребята, это как-то несерьёзно( Я дома делаю в 100 раз лучше!"</p>
+                    <p class="author">- Михаил Н.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="order" class="order-section">
+            <h2>Оформление заказа</h2>
+            <form class="order-form">
+                <fieldset>
+                    <legend>Контактная информация</legend>
+                    <div class="form-group">
+                        <label for="name">ФИО:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Адрес доставки</legend>
+                    <div class="form-group">
+                        <label for="address">Адрес:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apartment">Квартира/Офис:</label>
+                        <input type="text" id="apartment" name="apartment">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Комментарий к заказу:</label>
+                        <textarea id="comment" name="comment"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Способ оплаты</legend>
+                    <div class="form-group radio-group">
+                        <input type="radio" id="cash" name="payment" value="cash" checked>
+                        <label for="cash">Наличными при получении</label>
+                    </div>
+                    <div class="form-group radio-group">
+                        <input type="radio" id="card" name="payment" value="card">
+                        <label for="card">Картой онлайн</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Оформить заказ</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Связь с нами</h3>
+                <p><i class="fas fa-map-marker-alt"></i> г.Пермь, ул.Торговая 23</p>
+                <p><i class="fas fa-phone"></i> 8(800)555-35-35</p>
+                <p><i class="fas fa-envelope"></i> CoffeeandCookies@gmail.com</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
